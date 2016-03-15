@@ -23,12 +23,6 @@ libraryDependencies ++= Seq(
   "org.querki" %%% "jquery-facade" % "0.10"
 )
 
-jsDependencies += "org.webjars" % "bootstrap" % "3.3.4" / "bootstrap.js" minified "bootstrap.min.js" dependsOn "jquery.js"
-
-jsDependencies += "org.webjars" % "bootstrap-datepicker" % "1.4.0" / "bootstrap-datepicker.js" minified "bootstrap-datepicker.min.js" dependsOn "bootstrap.js"
-
-jsDependencies in Test += RuntimeDOM
-
 homepage := Some(url("http://www.querki.net/"))
 
 licenses += ("MIT License", url("http://www.opensource.org/licenses/mit-license.php"))
